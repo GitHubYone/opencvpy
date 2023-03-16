@@ -9,7 +9,6 @@ frameHeight = 480
 cap = cv2.VideoCapture(0)
 
 
-
 while True:
     ret, img = cap.read()
     img = cv2.resize(img, (frameWidth, frameHeight))
@@ -19,4 +18,3 @@ while True:
     # qを押すと止まる。
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
-
