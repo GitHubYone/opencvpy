@@ -1,6 +1,6 @@
 import cv2
 import numpy
-import PIL
+#import PIL
 
 # Video
 frameWidth = 640
