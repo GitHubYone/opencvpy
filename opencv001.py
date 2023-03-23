@@ -18,7 +18,7 @@ print(cap_width,cap_height,num_of_frame,fps)
 
 while True:
     ret, img = cap.read()
-    img = cv2.resize(img, (frameWidth, frameHeight))
+    #img = cv2.resize(img, (frameWidth, frameHeight))
     img2 = cv2.flip(img,1)
     cv2.imshow('Video', img2)
     #print('ret=', ret)
