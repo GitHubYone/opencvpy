@@ -4,12 +4,12 @@ import cv2
 #上下左右反転などはnumpy及びpillowでもある
 
 # Video
-frameWidth = 640
-frameHeight = 480
+#frameWidth = 800
+#frameHeight = 480
 #frameWidth = 320
 #frameHeight = 240
-cropscale = 0
-
+frameWidth = 800
+frameHeight = 600
 #Video Source
 #cap = cv2.VideoCapture('videos/traffic.mp4') #自分のmp4のpathを入力
 cap = cv2.VideoCapture(0)
@@ -33,8 +33,8 @@ while True:
     #dst = cv2.rotate(img2, cv2.ROTATE_90_COUNTERCLOCKWISE)#反時計回り90度回転
     #dst = cv2.rotate(img2, cv2.ROTATE_180)#180度回転
     dst = img2
-    dst2 = cv2.resize(dst[60:-60, 80:-80, :], dsize = (w, h))
-    #dst2 = dst
+    #dst2 = cv2.resize(dst[60:-60, 80:-80, :], dsize = (w, h))
+    dst2 = dst
     cv2.imshow('Video', dst2)
     #print('ret=', ret)
 
