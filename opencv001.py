@@ -33,8 +33,8 @@ while True:
     #dst = cv2.rotate(img2, cv2.ROTATE_90_COUNTERCLOCKWISE)#反時計回り90度回転
     #dst = cv2.rotate(img2, cv2.ROTATE_180)#180度回転
     dst = img2
-    #dst2 = cv2.resize(dst[60:-60, 80:-80, :], dsize = (w, h))
-    dst2 = dst
+    dst2 = cv2.resize(dst[60:-60, 80:-80, :], dsize = (w, h))
+    #dst2 = dst
     cv2.imshow('Video', dst2)
     #print('ret=', ret)
 
